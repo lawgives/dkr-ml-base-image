@@ -1,2 +1,15 @@
-# dkr-ml-base-image
-Legalio Machine Learning Base Image
+# Legalio ML Base Image
+
+## Build
+
+```
+make
+```
+
+To push
+
+```
+make push
+```
+
+## Usage
