@@ -12,6 +12,10 @@ RUN apk update && \
     pip install --upgrade pip && \
     apk add build-base
 
+# Add app user 9999:9999 and su-exec
+RUN apk --no-cache add su-exec \
+    && /bin/busybox adduser -D -u 9999 app
+
 # From: https://github.com/frol/docker-alpine-python-machinelearning/blob/master/Dockerfile
 # Took out python3-dev dep because it is 3.6.3 on Alpine 3.7
 RUN apk add --no-cache \
