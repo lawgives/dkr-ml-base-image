@@ -5,7 +5,9 @@ ENV NUMPY_VER=1.14.2 \
     SCIPY_VER=1.0.1 \
     SCIKIT_LEARN_VER=0.19.1 \
     FLASK_VER=0.12.2 \
-    GUNICORN_VER=19.7.1
+    GUNICORN_VER=19.7.1 \
+    ROLLBAR_VER=0.13.18 \
+    BLINKER_VER=1.4
 
 RUN apk update && \
     apk upgrade && \
@@ -25,7 +27,10 @@ RUN apk add --no-cache \
     \
     apk add libstdc++ openblas && \
     \
-    pip install numpy==${NUMPY_VER} \
+    pip install \
+	rollbar==${ROLLBAR_VER} \
+        blinker==${BLINKER_VER} \
+ 	numpy==${NUMPY_VER} \
         scipy==${SCIPY_VER} \
         scikit-learn==${SCIKIT_LEARN_VER} \
         flask==${FLASK_VER} \

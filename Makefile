@@ -1,7 +1,7 @@
 # Makefile for creating container file
 # Override these with environmental variables
-VERSION?=1.1
-FULL_VERSION?=1.1-scilearn-0.19.1
+VERSION?=1.2
+FULL_VERSION?=1.2-scilearn-0.19.1
 
 ### Do not override below
 
