@@ -6,7 +6,7 @@ ENV NUMPY_VER=1.14.2 \
     SCIKIT_LEARN_VER=0.19.1 \
     FLASK_VER=0.12.2 \
     GUNICORN_VER=19.7.1 \
-    ROLLBAR_VER=0.13.18 \
+    ROLLBAR_VER=0.14.0 \
     BLINKER_VER=1.4
 
 RUN apk update && \
